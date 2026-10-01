@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+ int main (){
+ 	int n;
+	 cin>>n;
+ 	int anterior;
+ 	cin >>anterior;
+ 	int movs=0;
+ 	for(int i=1; i<n;i++){	
+ 		int x;
+ 		cin>>x;
+ 		if(x<anterior){
+ 			movs += anterior-x;
+		 }else{
+		 	anterior=x;
+		 }
+	 }
+	 cout<<movs;
+}
